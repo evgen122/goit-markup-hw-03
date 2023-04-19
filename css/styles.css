@@ -16,11 +16,44 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1104px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/**
+  |============================
+  | HEADER
+  |============================
+*/
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -29,8 +62,8 @@ body {
   font-size: 18px;
   line-height: 1.17;
   color: var(--logo-color-web);
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -46,16 +79,40 @@ body {
 }
 
 .logo-studio-dark {
+  color: var(--color-logo-dark);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  color: var(--color-logo-dark);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+}
+
+.page-navigation {
+  margin-left: 76px;
+}
+
+.menu {
+  display: flex;
+}
+
+/* .menu-item {
+  margin-left: 40px;
+} */
+
+/* .menu-item:first-child {
+  margin-left: 0;
+} */
+
+.menu-item + .menu-item {
+  margin-left: 40px;
 }
 
 .menu-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -66,27 +123,35 @@ body {
 .menu-link:hover,
 .menu-link:focus,
 .menu-link:active {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--color-clic);
 }
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .menu-contact {
+  display: flex;
   font-style: normal;
 }
 
-.contact {
+.menu-contact-list + .menu-contact-list {
+  margin-left: 40px;
+}
+
+.menu-contact-list .contact {
+  color: var(--color-body);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color-body);
 }
+
+/* .text {
+  display: block;
+  padding-top: 24;
+  padding-bottom: 24;
+} */
 
 .contact:hover,
 .contact:focus,
@@ -97,6 +162,11 @@ body {
   color: var(--color-clic);
 }
 
+/**
+  |============================
+  | TEXT STYLES
+  |============================
+*/
 .page-title {
   font-weight: 700;
   font-size: 56px;
@@ -138,47 +208,90 @@ body {
   color: var(--color-logo-dark);
 }
 
-/* ============HERO================ */
+/**
+  |============================
+  | SECTION_1_HERO
+  |============================
+*/
 .hero {
   background-color: var(--color-logo-ligt);
 }
 
 .main-btn {
   background-color: var(--color-btn-hero);
+  display: flex;
+  min-width: 169px;
+  margin-top: 48px;
+  align-items: center;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
+  line-height: 1.5;
+
   color: var(--color-wite);
 }
 
 .main-btn:hover,
 .main-btn:focus {
-  cursor: pointer;
   background-color: var(--color-clic);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
   color: var(--color-wite);
 }
 
-/* ============SECTION_4 COLLABORATOR================ */
+/**
+  |============================
+  | SECTION_2_ADVANTEGES
+  |============================
+*/
+.advantages {
+  margin-top: 120px;
+}
+.advantages .text-margin {
+  margin-top: 8px;
+}
+
+/**
+  |============================
+  | SECTION_3_WE_DOING
+  |============================
+*/
+.wedoing {
+  margin-top: 120px;
+}
+.text-margin {
+  margin-top: 72px;
+}
+
+/**
+  |============================
+  | SECTION_4_COLLABORATOR
+  |============================
+*/
 .collaborator {
+  margin-top: 120px;
   background-color: var(--color-logo-dark);
 }
 .card {
   background-color: var(--color-wite);
+  .card h3 .text-margin;
 }
+.card .text-margin {
+  margin-top: 8px;
+}
+.card .text-margin-up {
+  margin-top: 32px;
+}
+
 /* ============FUTER================ */
 .futer {
+  margin-top: 120px;
   background-color: var(--color-logo-ligt);
+}
+.futer .text-margin {
+  margin-top: 16px;
 }
 
 /* ============PORTFOLOIO================ */
@@ -197,13 +310,5 @@ body {
 .nav-button:hover,
 .nav-button:focus {
   background-color: var(--color-clic);
-  border: 1px solid var(--color-btn-clic);
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: var(--color-wite);
 }
