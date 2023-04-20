@@ -223,6 +223,10 @@ p {
 .hero {
   background-color: var(--color-logo-ligt);
 }
+
+.dimensions {
+  padding-bottom: 188px;
+}
 .page-title {
   text-align: center;
   padding-top: 188px;
@@ -334,10 +338,6 @@ p {
 .card .text-margin {
   margin-top: 8px;
 }
-
-/* .card .text-margin-up {
-  margin-top: 32px;
-} */
 
 .card-block {
   margin-top: 32px;
