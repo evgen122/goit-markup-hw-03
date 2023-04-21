@@ -272,7 +272,8 @@ p {
   |============================
 */
 .advantages {
-  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .advantages .text-margin {
@@ -293,7 +294,8 @@ p {
   |============================
 */
 .wedoing {
-  margin-top: 120px;
+  /*   margin-top: 120px;
+ */
 }
 
 .text-margin {
