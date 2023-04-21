@@ -419,6 +419,7 @@ p {
 .navigation {
   display: flex;
   margin-top: 96px;
+
   justify-content: center;
 }
 
