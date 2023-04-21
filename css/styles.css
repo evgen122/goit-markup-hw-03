@@ -278,7 +278,7 @@ p {
 }
 
 .title-adv {
-  padding-top: 120px;
+  margin-bottom: 8px;
 }
 
 .advantages .text-margin {
@@ -385,7 +385,7 @@ p {
 }
  */
 .futer-block-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -402,6 +402,9 @@ p {
   | SECTION_0 HEADER
   |============================
 */
+.dimensions-portf-main {
+  padding: 96px 0 120px;
+}
 
 .page-header {
   border-bottom: 1px solid var(--color-header-border);
@@ -409,7 +412,7 @@ p {
 
 /**
   |============================
-  | SECTION_1 MENU
+  | SECTION_1 MAIN
   |============================
 */
 
