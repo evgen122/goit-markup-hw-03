@@ -142,10 +142,12 @@ p {
 .menu-contact {
   display: flex;
   font-style: normal;
+  gap: 40px;
 }
 
 .menu-contact-list + .menu-contact-list {
-  margin-left: 40px;
+  /*   margin-left: 40px;
+ */
 }
 
 .menu-contact-list .contact {
@@ -179,7 +181,6 @@ p {
 */
 
 .text-suptitl {
-  padding-top: 120px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -221,11 +222,11 @@ p {
 }
 
 .dimensions {
+  padding-top: 188px;
   padding-bottom: 188px;
 }
 .page-title {
   text-align: center;
-  padding-top: 188px;
   max-width: 496px;
   margin: 0 auto;
 
@@ -276,16 +277,20 @@ p {
   padding-bottom: 120px;
 }
 
+.title-adv {
+  padding-top: 120px;
+}
+
 .advantages .text-margin {
-  margin-top: 8px;
 }
 
 .list-about {
   display: flex;
+  gap: 24px;
 }
 
-.list-about-item:not(:first-child) {
-  margin-left: 24px;
+.list-about-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 /**
@@ -294,20 +299,27 @@ p {
   |============================
 */
 .wedoing {
+  padding-bottom: 120px;
   /*   margin-top: 120px;
  */
 }
 
+.title-wedoing {
+  margin-bottom: 72px;
+}
+
 .text-margin {
-  margin-top: 72px;
+  /*   margin-top: 72px;
+ */
 }
 
 .wedoing-block {
   display: flex;
+  gap: 24px;
 }
 
-.list-wedoing:not(:first-child) {
-  margin-left: 24px;
+.list-wedoing {
+  width: calc((100% - 3 * 16px) / 3);
 }
 
 .img-styles {
@@ -320,16 +332,22 @@ p {
   |============================
 */
 .collaborator {
-  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--color-logo-dark);
 }
 
-.collaborator-block-dimension {
+/* .collaborator-block-dimension {
   padding-bottom: 120px;
+}
+ */
+.title-col {
+  margin-bottom: 72px;
 }
 
 .collaborator-block {
   display: flex;
+  gap: 24px;
 }
 
 .card {
@@ -339,8 +357,8 @@ p {
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.card:not(:first-child) {
-  margin-left: 24px;
+.suptitle-col {
+  margin-bottom: 8px;
 }
 
 .card .text-margin {
@@ -348,31 +366,33 @@ p {
 }
 
 .card-block {
-  margin-top: 32px;
   width: 232px;
+  padding: 32px 16px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 32px;
 
   text-align: center;
 }
 
 /* ============FUTER================ */
 .futer {
+  padding: 100px 0;
   background-color: var(--color-logo-ligt);
 }
 
-.futer-block {
+/* .futer-block {
   width: 264px;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
-
+ */
 .futer-block-logo {
+  display: block;
+  margin-bottom: 16px;
 }
 
 .futer .futer-block-text {
-  margin-top: 16px;
+  max-width: 264px;
+  /*   margin-top: 16px;
+ */
 }
 
 /* ============PORTFOLOIO================ */
